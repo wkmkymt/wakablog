@@ -1,0 +1,379 @@
+/*
+Theme Name: WakameBlog
+Theme URI: http://wkmkymt.wakwak.info/
+Author: Mt.K
+Author URI: http://wkmkymt.wakwak.info/
+Version: 1.0
+*/
+
+@charset "UTF-8";
+
+/* ==============================================
+   ==================== Base ====================
+   ============================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+section,
+nav,
+aside,
+header,
+footer {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* ==============================================
+   ==================== Body ====================
+   ============================================== */
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    background-color: #dfc;
+    color: #333;
+    font-size: 100%;
+    font-family: Helvetica, "メイリオ", Meiryo "ヒラギノ角ゴ Pro W3", "MS Pゴシック", "Osaka", sans-serif;
+    font-weight: normal;
+}
+
+.wrap {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   ==================== Site Header ====================
+   ===================================================== */
+.site-header {
+    width: 100%;
+    background-color: #7d5;
+}
+
+.site-header .header-wrap {
+    padding: 30px 0;
+}
+
+/* ================================
+   ========== Site Title ==========
+   ================================ */
+.site-header h1 {
+    height: 60px;
+    font-size: 250%;
+    line-height: 60px;
+    float: left;
+}
+
+.site-header h1 a {
+    color: #fff;
+    transition: color 0.4s ease-out;
+}
+
+.site-header h1 a:hover {
+    color: #f82;
+}
+
+/* =======================================
+   ========== Global Navigation ==========
+   ======================================= */
+.site-header .nav {
+    float: right;
+}
+
+.site-header .nav-wrap {
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.site-header .nav li {
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+}
+
+.site-header .nav a {
+    display: block;
+    color: #fff;
+    font-size: 90%;
+    transition: background-color 0.3s ease;
+}
+
+.site-header .nav a:hover {
+    background-color: #f82;
+}
+
+
+/* ==============================================
+   ==================== Main ====================
+   ============================================== */
+.main {
+    width: 100%;
+}
+
+.main .column {
+    padding: 20px 20px;
+    float: left;
+}
+
+/* ==============================
+   ========== Contents ==========
+   ============================== */
+.contents {
+    width: 710px;
+}
+
+/* ===== Contents Header ===== */
+.contents > header {
+    width: 100%;
+    height: 60px;
+}
+
+.contents > header h2 {
+    color: #7d5;
+    font-size: 180%;
+}
+
+.contents > header h2:first-letter {
+    font-size: 180%;
+    line-height: 60px;
+    letter-spacing: -3px;
+}
+
+/* ===== Page Navigation ===== */
+.contents .page-nav {
+    width: 100%;
+    height: 80px;
+}
+
+.contents .page-nav ul {
+    padding: 10px;
+    text-align: center;
+    line-height: 44px;
+}
+
+.contents .page-nav .page-number {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.contents .page-nav .page-number a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    color: #aaa;
+    font-size: 120%;
+    border: solid 3px #ccc;
+    border-radius: 30px;
+    transition: ALL 0.4s ease-out;
+}
+
+.contents .page-nav .page-number a:hover {
+    color: #333;
+    border-color: #f82;
+}
+
+.contents .page-nav .current a {
+    background-color: #f82;
+    color: #fff;
+    border-color: #f82;
+}
+
+/* ===== Entry ===== */
+.contents .entry {
+    width: 100%;
+    margin: 40px 0;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.contents .entry:first-of-type {
+    margin-top: 20px;
+}
+
+.contents .entry:last-of-type {
+    margin-bottom: 20px;
+}
+
+.contents .entry .entry-wrap {
+    padding: 20px 40px;
+}
+
+/* Entry Header */
+.contents .entry header {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.contents .entry header h1 a {
+    color: #444;
+    font-size: 160%;
+    transition: color 0.4s ease-out;
+}
+
+.contents .entry header h1 a:hover {
+    color: #f82;
+}
+
+/* Entry Footer */
+.contents .entry footer {
+    width: 100%;
+}
+
+.contents .entry footer ul {
+    margin-left: 20px;
+}
+
+.contents .entry footer li {
+    height: 20px;
+    font-size: 90%;
+    line-height: 20px;
+}
+
+.contents .entry footer li span {
+    margin-right: 5px;
+    color: #aaa;
+}
+
+.contents .entry footer li a {
+    color: #666;
+    transition: color 0.4s ease-out;
+}
+
+.contents .entry footer li a:hover {
+    color: #f82;
+}
+
+
+/* Entry Main */
+.contents .entry .content-wrap {
+    padding-top: 40px;
+    overflow: hidden;
+}
+
+.contents .entry .eyecatch {
+    float: left;
+}
+
+.contents .entry .eyecatch a {
+    display: block;
+}
+
+.contents .entry .eyecatch a img {
+    display: block;
+    width: 144px;
+    height: 144px;
+    margin-right: 20px;
+    border: solid 3px #ccc;
+    border-radius: 10px;
+    transition: border-color 0.4s ease-out;
+}
+
+.contents .entry .eyecatch a:hover img {
+    border-color: #f82;
+}
+
+.contents .entry p {
+    line-height: 180%;
+    word-wrap: break-word;
+}
+
+
+/* ==============================
+   ========== Side Bar ==========
+   ============================== */
+.side-bar {
+    width: 170px;
+}
+
+.side-bar .side-wrap {
+    padding-top: 80px;
+}
+
+.side-bar .widget {
+    margin: 50px 0;
+}
+
+.side-bar .widget:first-of-type {
+    margin-top: 0;
+}
+
+.side-bar .widget:last-of-type {
+    margin-bottom: 0;
+}
+
+.side-bar .widget h3 {
+    height: 40px;
+    font-size: 110%;
+    color: #555;
+    line-height: 40px;
+}
+
+.side-bar .widget ul {
+    padding: 10px 0;
+}
+
+.side-bar .widget li {
+    font-size: 100%;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.side-bar .widget li a {
+    color: #888;
+    transition: color 0.4s ease-out;
+}
+
+.side-bar .widget li a:hover {
+    color: #f82;
+}
+
+
+/* =====================================================
+   ==================== Site Footer ====================
+   ===================================================== */
+.site-footer {
+    width: 100%;
+    background-color: #8d6;
+}
+
+.site-footer .footer-wrap {
+    padding: 20px 0;
+}
+
+.site-footer p {
+    line-height: 60px;
+}
+
+.site-footer small {
+    color: #dfc;
+    font-size: 100%;
+}
+
+.site-footer small a {
+    color: #fff;
+    transition: color 0.4s ease-out;
+}
+
+.site-footer small a:hover {
+    color: #f82;
+}
